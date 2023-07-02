@@ -1,0 +1,7 @@
+{
+  "API_BASE": {
+    "LOCAL": "http://localhost:8080",
+    "STAGING": "http://localhost:8080",
+    "PRODUCTION": "http://localhost:8080"
+  }
+}

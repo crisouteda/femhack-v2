@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# [Femhack v2](https://nuwe.io/dev/competitions/femhack-hackathon-vol_II/frontend-femhack-challenge)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Frontend for internet usage data display.
 
-## Available Scripts
+The application retrieves data from the server and displays the data in multiple charts.
 
-In the project directory, you can run:
+## 💻 Development
 
-### `yarn start`
+These instructions will allow you to get a working copy of the project on your local machine for development and testing purposes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 📋 Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+You need to have installed Node JS (Developed on v17.9.3).
 
-### `yarn test`
+### 🔧 Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Download this repository as zip or clone the repository on your device
+2. Open a terminal in the root directory of the repository.
+3. Install the necessary dependencies by running:
 
-### `yarn build`
+```
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+or
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+yarn
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🏁 Starting the project
 
-### `yarn eject`
+To serve the app locally run:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+npm run start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+or
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+yarn start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🛠️ Tools
 
-## Learn More
+- The aplication uses [React.js](https://reactjs.org/) framework (version ^17.0.0)
+- The main style tool used is [styled-components](https://styled-components.com/)(version ^5.3.5)
+- [Ant Design](https://ant.design/): provides multiple common functional components with fine design and UX (version ^5.6.3)
+- [Ant Desing Charts](https://charts.ant.design/en/): provides different well designed chats with animations (version ^1.4.2)
+- [React simple-maps](https://www.react-simple-maps.io/): allows to create beautiful SVG maps in react using a declarative api.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+An example report can be found [here](https://phone-catalogue-app.netlify.app/lighthouse.html).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📝 Following improvements and TODOS
+
+- Authentication token should be updated automatically shortly before its expiration date.
+
+- Add and improve tests
+
+- Improvements in user experience. Ensure optimal view in every screen size and improve themes and general design

@@ -64,7 +64,7 @@ const UsersXYearView: React.FC<Props> = ({ countries }: Props) => {
         data={
           internetUsagePerCountries?.filter((c) =>
             selectedCountries.includes(c.country)
-          ) ?? []
+          ) || []
         }
       />
     </div>

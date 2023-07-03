@@ -93,7 +93,10 @@ function handleFetchInternetUsagePerYearByCountry(
       const response = await fetchInternetUsagePerYearByCountry({ year });
       dispatch({
         type: FETCH_INTERNET_USAGE_PER_YEAR_BY_COUNTRY_SUCCESS,
-        payload: response,
+        payload: {
+          data: response,
+          year
+        },
       });
     } catch (e) {
       dispatch({

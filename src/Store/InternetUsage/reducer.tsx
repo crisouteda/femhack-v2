@@ -42,6 +42,7 @@ interface State {
   internetUsagePerYearByCountry: InternetUsers;
   internetUsagePerYearByCountryLoading: boolean;
   internetUsagePerYearByCountryError: Message | null;
+  internetUsagePerYearByCountries: { year: number; data: InternetUsers }[];
 
   internetUsageInYear: TotalNumber;
   internetUsageInYearLoading: boolean;
@@ -71,6 +72,7 @@ const initialState: State = {
   internetUsagePerCountryAndYearError: null,
 
   internetUsagePerYearByCountry: {},
+  internetUsagePerYearByCountries: [],
   internetUsagePerYearByCountryLoading: false,
   internetUsagePerYearByCountryError: null,
 
@@ -111,8 +113,10 @@ function reducer(state: State, action: { type: string; payload: any }) {
       const fetchedCountries = state.internetUsagePerCountries.map(
         (c) => c.country
       );
-      const isIncluded = fetchedCountries.includes(action.payload.country);
-      if (isIncluded)
+      const isCountryIncluded = fetchedCountries.includes(
+        action.payload.country
+      );
+      if (isCountryIncluded)
         return {
           ...state,
           internetUsagePerCountryLoading: false,
@@ -159,10 +163,24 @@ function reducer(state: State, action: { type: string; payload: any }) {
         internetUsagePerYearByCountryError: null,
       };
     case FETCH_INTERNET_USAGE_PER_YEAR_BY_COUNTRY_SUCCESS:
+      const fetchedYears = state.internetUsagePerYearByCountries.map(
+        (c) => c.year
+      );
+      const isYearIncluded = fetchedYears.includes(action.payload.year);
+      if (isYearIncluded)
+        return {
+          ...state,
+          internetUsagePerCountryLoading: false,
+          internetUsagePerCountry: action.payload.data,
+        };
       return {
         ...state,
         internetUsagePerYearByCountryLoading: false,
-        internetUsagePerYearByCountry: action.payload,
+        internetUsagePerYearByCountry: action.payload.year,
+        internetUsagePerYearByCountries: [
+          ...state.internetUsagePerYearByCountries,
+          action.payload,
+        ].sort((a, b) => a.year - b.year),
       };
     case FETCH_INTERNET_USAGE_PER_YEAR_BY_COUNTRY_FAIL:
       return {

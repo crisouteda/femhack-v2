@@ -11,6 +11,7 @@ import { CarouselRef } from "antd/es/carousel";
 import Card from "../../../Common/components/Card";
 import TotalInternetUsers from "../../TotalInternetUsers/views";
 import { arrayRange } from "../../../Common/helpers";
+import TopTenView from "../../TopTen/views";
 
 const years = arrayRange(1980, 2020, 1);
 
@@ -25,6 +26,10 @@ const Dashboard: React.FC = () => {
     {
       key: "usersPerYear",
       component: <UsersXYearView countries={countries || []} />,
+    },
+    {
+      key: "topTen",
+      component: <TopTenView countries={countries || []} years={years} />,
     },
     {
       key: "map",

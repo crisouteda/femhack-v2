@@ -135,13 +135,21 @@ Many request have to be done in loop so the implementation of this chart slows d
 
 #### Task 2: Animating website:
 
-- Charts animations are handled mostly by AntD Charts. The animations are displayed when the range of years change. Also when a new country is added in the chart 2.
+- Chart animations
 
-- The animation between charts is handled in a Carousel. There are two ways to swap between charts: by dragging and by clicking on the animated buttons in both sides of the white card.
+It is handled mostly by AntD Charts. The animations are displayed when the range of years change. Also when a new country is added in the chart 2.
+
+- Page animations
+
+The animation between charts is handled in a Carousel. There are two ways to swap between charts: by dragging and by clicking on the animated buttons in both sides of the white card.
 
 #### Task 3: World Map data visualization:
 
-- A heat map is displayed together with a input number component to see how the usage increated with the years. The UX could easily improve by allowing to click in the country and see the name and the usage. Maybe a different package would allow a simple addition of the feature.
+- The map
+
+A heat map is displayed together with a input number component to see how the usage increated with the years. The UX could easily improve by allowing to click in the country and see the name and the usage. Maybe a different package would allow a simple addition of the feature.
+
+- The year input
 
 Both a slider and a input field were added so it is easy to set a concrete year is wished (with the input field) or fastly see the change (with the slider) for exploration purposes.
 

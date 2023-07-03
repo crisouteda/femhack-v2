@@ -129,6 +129,10 @@ Instead of changing axis, which felt messy and hard to inderstand visually, I op
 
 - Top 10 Countries per Year Chart
 
+The choice made is an interactive accumulated columns chart in which the top 10 countries each year are shown.
+
+Many request have to be done in loop so the implementation of this chart slows down the page very much in the first print. It would be ideal to do a batch fetch request.
+
 #### Task 2: Animating website:
 
 - Charts animations are handled mostly by AntD Charts. The animations are displayed when the range of years change. Also when a new country is added in the chart 2.

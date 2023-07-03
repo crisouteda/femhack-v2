@@ -13,7 +13,7 @@ import TotalInternetUsers from "../../TotalInternetUsers/views";
 import { arrayRange } from "../../../Common/helpers";
 import TopTenView from "../../TopTen/views";
 
-const years = arrayRange(1980, 2020, 1);
+const years = arrayRange(1990, 2020, 1);
 
 const Dashboard: React.FC = () => {
   const { handleFetchCountries, handleFetchInternetUsageInYear } =

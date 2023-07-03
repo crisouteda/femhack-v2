@@ -16,8 +16,9 @@ const displayOptions = [
   { label: "Percentage", value: "internet_users_percentatge" },
 ];
 
+const initialValue = "Spain";
 const UsersXYearView: React.FC<Props> = ({ countries }: Props) => {
-  const [selectedCountries, setSelectedCountries] = useState(["Spain"]);
+  const [selectedCountries, setSelectedCountries] = useState([initialValue]);
   const { handleFetchInternetUsagePerCountry } = useContextActions();
   const { internetUsagePerCountries } = useContextState();
   const [display, setDisplay] = useState<
@@ -46,10 +47,10 @@ const UsersXYearView: React.FC<Props> = ({ countries }: Props) => {
       }
       <div className='flex flex-col'>
         <ListSelect
-          multiple
           data={countries}
           onChange={setSelectedCountries}
           placeholder='Select countries'
+          initialValue={initialValue}
         />
       </div>
       <div className='flex flex-col'>

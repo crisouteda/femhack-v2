@@ -170,13 +170,13 @@ function reducer(state: State, action: { type: string; payload: any }) {
       if (isYearIncluded)
         return {
           ...state,
-          internetUsagePerCountryLoading: false,
-          internetUsagePerCountry: action.payload.data,
+          internetUsagePerYearByCountryLoading: false,
+          internetUsagePerYearByCountry: action.payload.data,
         };
       return {
         ...state,
         internetUsagePerYearByCountryLoading: false,
-        internetUsagePerYearByCountry: action.payload.year,
+        internetUsagePerYearByCountry: action.payload.data,
         internetUsagePerYearByCountries: [
           ...state.internetUsagePerYearByCountries,
           action.payload,

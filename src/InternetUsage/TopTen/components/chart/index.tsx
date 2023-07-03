@@ -31,8 +31,6 @@ const TopTenChart: React.FC<Props> = ({ data }: Props) => {
     .filter((c) => c.internet_users_percentatge !== 0)
     .sort((a, b) => a.year - b.year);
 
-  console.log({ dataChart, top10FilteredData, top10DataSorted });
-
   return (
     <Column
       className='w-full'
@@ -42,6 +40,10 @@ const TopTenChart: React.FC<Props> = ({ data }: Props) => {
       isStack={true}
       seriesField='country'
       label={false}
+      slider={{
+        start: 0.1,
+        end: 0.5,
+      }}
     />
   );
 };

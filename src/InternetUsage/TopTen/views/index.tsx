@@ -27,7 +27,7 @@ const TopTenView: React.FC<Props> = ({ countries, years }: Props) => {
   }, [countries]);
 
   return (
-    <div className='flex flex-col w-full'>
+    <div className='flex flex-col w-full justify-around'>
       <ChartTitle>Top 10 Number of Internet Users Per Year</ChartTitle>
       <TopTenChart data={internetUsagePerYearByCountries || []} />
     </div>

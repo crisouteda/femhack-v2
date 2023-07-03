@@ -129,7 +129,7 @@ Instead of changing axis, which felt messy and hard to inderstand visually, I op
 
 - Top 10 Countries per Year Chart
 
-The choice made is an interactive accumulated columns chart in which the top 10 countries each year are shown.
+The choice made is an interactive accumulated columns chart in which the top 10 countries each year are shown. There are probably better charts since there is too much data together, however, the time is limited.
 
 Many request have to be done in loop so the implementation of this chart slows down the page very much in the first print. It would be ideal to do a batch fetch request.
 

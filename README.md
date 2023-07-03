@@ -4,15 +4,15 @@
 
 The application retrieves data from the server and displays the data in multiple charts.
 
-## 💻 Development
+## Development
 
 These instructions will allow you to get a working copy of the project on your local machine for development and testing purposes.
 
-### 📋 Prerequisites
+### Prerequisites
 
 You need to have installed Node JS (Developed on v17.9.3).
 
-### 🔧 Installation
+### Installation
 
 1. Download this repository as zip or clone the repository on your device
 2. Open a terminal in the root directory of the repository.
@@ -28,7 +28,7 @@ or
 yarn
 ```
 
-### 🏁 Starting the project
+### Starting the project
 
 To serve the app locally run:
 
@@ -42,7 +42,7 @@ or
 yarn start
 ```
 
-## 🛠️ Tools
+## Tools
 
 - [React.js](https://reactjs.org/) framework (version ^17.0.0)
 - [Typescript](https://www.typescriptlang.org/): Typed programming language built on Javascript
@@ -73,7 +73,7 @@ The project connects with backend, and displays different charts about the usage
 
 - The responsiveness of the map is not good. As it is imported as a svg it is not easy to adjust in size. Also the ux is not geat. It would be ideal so see the name of the country on hover as well as the number reflected
 
-### 📝 Next steps and Following improvements
+### Next steps and Following improvements
 
 - Refactor the style. In the project there are 3 ways of adding style: antd, tailwind and css. Tailwind and css together make no sense since both of them cover a similar task. As a todo I would avoid the problem by substituting tailwind and css with a css preprocessor such as scss.
 

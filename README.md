@@ -73,6 +73,8 @@ The project connects with backend, and displays different charts about the usage
 
 - The responsiveness of the map is not good. As it is imported as a svg it is not easy to adjust in size. Also the ux is not geat. It would be ideal so see the name of the country on hover as well as the number reflected
 
+As a summary, I have spent too much time on set up and configuration. On the other hand, not enough time invested on research for the best charts choices and packages. Also, not enough time invested in ux and design.
+
 ### Next steps and Following improvements
 
 - Refactor the style. In the project there are 3 ways of adding style: antd, tailwind and css. Tailwind and css together make no sense since both of them cover a similar task. As a todo I would avoid the problem by substituting tailwind and css with a css preprocessor such as scss.

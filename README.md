@@ -144,3 +144,7 @@ Many request have to be done in loop so the implementation of this chart slows d
 - A heat map is displayed together with a input number component to see how the usage increated with the years. The UX could easily improve by allowing to click in the country and see the name and the usage. Maybe a different package would allow a simple addition of the feature.
 
 Both a slider and a input field were added so it is easy to set a concrete year is wished (with the input field) or fastly see the change (with the slider) for exploration purposes.
+
+## Results
+
+To be delivered
